@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Cases" verbose="1">
+    <listeners>
+        <listener class-name="Reports.ListenerClass">
+        </listener>
+    </listeners>
+    <test name="Verify By fetching data from Books">
+        <parameter name="testRunId1" value="TC-1"/>
+        <classes>
+            <class name="Test.VerifyByDeserializeBookStore"/>
+        </classes>
+    </test>
+</suite>
